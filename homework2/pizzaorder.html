@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piza order</title>
+  </head>
+  <body>
+    <form action="pizzaorder.html" target="_blank" method="get">
+      <label for="your_name">Your name:</label>
+      <input type="text" required name="your_name" maxlength="10" minlength="3" />
+      <br />
+
+      <label for="e-mail">Your e-mail:</label>
+      <input type="e-mail" required name="e-mail" placeholder="example@example.com" />
+      <br />
+      <br />
+      <label for="topping">Topping</label><br />
+      <input type="radio" name="topping" value="supreme" checked />Supreme
+      <input type="radio" name="topping" value="Vegetarian" />Vegetarian
+      <input type="radio" name="topping" value="Hawaian" />Hawaian
+      <br />
+
+      <label for="Sauce">Sauce:</label>
+      <select name="sauce">
+        <option value="tomato">tomato</option>
+        <option value="spicy">spicy</option>
+        <option value="tzaziki">tzaziki</option>
+      </select>
+      <br />
+      <br />
+      <label for="extras">Extras</label>
+      <input type="checkbox" name="extras" value="cheese" />Cheese
+      <input type="checkbox" name="extras" value="onions" />Onions
+      <input type="checkbox" name="'extras" value="olives" /> Olives<br />
+      <br/>
+      
+      <label for="quantity">Quantity between 1-7</label>
+      <input type="number" name="quantity" min="1" max="7" step="1">
+      <br/>
+      <br/>
+      <label for="textarea">Delivery instructions</label><br/>
+      <textarea required name="delivery instructions" rows="10” cols="50"/></textarea>
+      </br/>
+     </br/>
+     <label for="delivery date">Delivery date</label>
+     <input type="date" name="delivery date" max="2024-04-18" min="2024-04-18">
+    </br>
+     <label for="appt">Till what time the delivery is expected</label>
+     <input type="time" name="appt" min="18:00" max="19:30">
+    </br/>
+     </br/>
+      <button type="submit">send order</button>
+      <button type="reset">reset</button>
+    </form>
+  </body>
+</html>
